@@ -1,0 +1,34 @@
+19:23:37 03/11/14 2992 [notice] Starting installation of module: base
+19:23:37 03/11/14 2992 [notice] owa_request Table Created.
+19:23:37 03/11/14 2992 [notice] owa_session Table Created.
+19:23:37 03/11/14 2992 [notice] owa_document Table Created.
+19:23:37 03/11/14 2992 [notice] owa_feed_request Table Created.
+19:23:37 03/11/14 2992 [notice] owa_click Table Created.
+19:23:37 03/11/14 2992 [notice] owa_ua Table Created.
+19:23:37 03/11/14 2992 [notice] owa_referer Table Created.
+19:23:37 03/11/14 2992 [notice] owa_site Table Created.
+19:23:37 03/11/14 2992 [notice] owa_visitor Table Created.
+19:23:37 03/11/14 2992 [notice] owa_host Table Created.
+19:23:37 03/11/14 2992 [notice] owa_exit Table Created.
+19:23:37 03/11/14 2992 [notice] owa_os Table Created.
+19:23:37 03/11/14 2992 [notice] owa_impression Table Created.
+19:23:37 03/11/14 2992 [notice] owa_configuration Table Created.
+19:23:37 03/11/14 2992 [notice] owa_user Table Created.
+19:23:37 03/11/14 2992 [notice] owa_domstream Table Created.
+19:23:37 03/11/14 2992 [notice] owa_action_fact Table Created.
+19:23:37 03/11/14 2992 [notice] owa_search_term_dim Table Created.
+19:23:37 03/11/14 2992 [notice] owa_ad_dim Table Created.
+19:23:37 03/11/14 2992 [notice] owa_source_dim Table Created.
+19:23:37 03/11/14 2992 [notice] owa_campaign_dim Table Created.
+19:23:37 03/11/14 2992 [notice] owa_location_dim Table Created.
+19:23:37 03/11/14 2992 [notice] owa_commerce_transaction_fact Table Created.
+19:23:37 03/11/14 2992 [notice] owa_commerce_line_item_fact Table Created.
+19:23:37 03/11/14 2992 [notice] owa_queue_item Table Created.
+19:23:37 03/11/14 2992 [notice] owa_site_user Table Created.
+19:23:37 03/11/14 2992 [notice] Post install proceadure was a success.
+19:23:37 03/11/14 2992 [notice] Module base activated
+19:23:37 03/11/14 2992 [notice] Installation complete.
+19:23:37 03/11/14 2992 [notice] Checking for existence of default site.
+19:23:37 03/11/14 2992 [notice] Created default site.
+19:23:37 03/11/14 2992 [notice] Install Complete Flag added to configuration
+20:21:57 03/11/14 2992 [notice] no rss content found at: http://www.openwebanalytics.com/?feed=rss2
