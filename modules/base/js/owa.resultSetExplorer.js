@@ -1098,7 +1098,7 @@ OWA.dataGrid.prototype = {
 					
 		} else {
 			var dom_id = this.dom_id;
-			jQuery("#" + dom_id).html("No data is available for this time period.");
+			jQuery("#" + dom_id).html("没有数据可用于这个时间段.");
 		}
 	},
 	
@@ -1232,7 +1232,7 @@ OWA.dataGrid.prototype = {
 		jQuery('#'+that.dom_id + ' > .explorerTopControls > ul').append(
 			OWA.util.sprintf(
 				'<li class="controlItem"><span class="label">%s:</span> <span id="%s"></span></li>', 
-				OWA.l('Secondary Dimension'), 
+				OWA.l('次要尺寸'), 
 				this.dom_id + '_grid_secondDimensionChooser' 
 			)
 		);
@@ -1261,7 +1261,7 @@ OWA.dataGrid.prototype = {
 		
 		// inject constraint builder
 		// secondard dimension picker
-		jQuery('#'+that.dom_id + ' > .explorerTopControls > ul').append('<li class="controlItem"><span class="label">Filter:</span> <span class="constraintPicker"></span></li>');
+		jQuery('#'+that.dom_id + ' > .explorerTopControls > ul').append('<li class="controlItem"><span class="label">过滤:</span> <span class="constraintPicker"></span></li>');
 		// constraint builder selector		
 		var cb_button_selector = '#'+ this.dom_id + ' > .explorerTopControls > ul > .controlItem > .constraintPickerButton';
 		var cb_cont_selector = '#'+ this.dom_id + ' > .explorerTopControls > ul > .controlItem > .constraintPicker';

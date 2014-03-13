@@ -1,25 +1,26 @@
+<?php if(!$_GET['isMagento']){?>
 <div id="owa_header">
 
 	<span class="owa_logo"><img src="<?php echo $this->makeImageLink( owa_coreAPI::getSetting( 'base', 'logo_image_path' ) ); ?>" alt="Open Web Analytics"></span>
 	 &nbsp
 	<span class="owa_navigation">
 		<UL>
-			<LI><a href="<?php echo $this->makeLink(array('do' => 'base.sites'));?>">Reporting</a></LI>
-			<LI><a href="<?php echo $this->makeLink(array('do' => 'base.optionsGeneral'));?>">Administration</a></LI>
-			<LI><a href="http://wiki.openwebanalytics.com">Help</a></LI>
-			<LI><a href="http://trac.openwebanalytics.com">Report a Bug</a></LI>
+			<LI><a href="<?php echo $this->makeLink(array('do' => 'base.sites'));?>">报告</a></LI>
+			<LI><a href="<?php echo $this->makeLink(array('do' => 'base.optionsGeneral'));?>">管理</a></LI>
+			<LI><a href="http://wiki.openwebanalytics.com">帮助</a></LI>
+			<LI><a href="http://trac.openwebanalytics.com">报告Bug</a></LI>
 			
 		</UL>
 	</span>
 	<?php $cu = $this->getCurrentUser(); ?>
 	<span class="user-greating" style="">
-		Hi, <?php $this->out( $cu->getUserData('user_id') );?> ! &bull;
+		你好, <?php $this->out( $cu->getUserData('user_id') );?> ! &bull;
 		<?php if ( ! owa_coreAPI::getSetting( 'base', 'is_embedded' ) ):?>
 			
 				<?php if ( owa_coreAPI::isCurrentUserAuthenticated() ):?>
-				<a class="login" href="<?php echo $this->makeLink(array('do' => 'base.logout'), false);?>">Logout</a>
+				<a class="login" href="<?php echo $this->makeLink(array('do' => 'base.logout'), false);?>">退出</a>
 				<?php else:?>
-				<a class="login" href="<?php echo $this->makeLink(array('do' => 'base.loginForm'), false);?>">Login</a>
+				<a class="login" href="<?php echo $this->makeLink(array('do' => 'base.loginForm'), false);?>">登录</a>
 				<?php endif;?>
 			
 			<?php endif;?>	
@@ -32,3 +33,4 @@
 	<?php $this->headerActions(); ?>
 	
 </div>
+<?php }?>

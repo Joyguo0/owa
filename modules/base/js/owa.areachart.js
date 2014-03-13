@@ -213,7 +213,7 @@ OWA.areaChart.prototype = {
 			this.init = true;		
 			
 		} else {
-			jQuery('#'+ dom_id).html("No data is available for this time period");
+			jQuery('#'+ dom_id).html("没有数据可用于这个时间段");
 			jQuery('#'+ dom_id).css('height', '50px');
 		}
 	},

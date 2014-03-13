@@ -341,7 +341,7 @@ class owa_baseModule extends owa_module {
 		// page views
 		$this->registerMetricDefinition(array(
 			'name'			=> 'pageViews',
-			'label'			=> 'Page Views',
+			'label'			=> '页面浏览次数',
 			'description'	=> 'The total number of pages viewed.',
 			'group'			=> 'Site Usage',
 			'entity'		=> 'base.request',
@@ -353,7 +353,7 @@ class owa_baseModule extends owa_module {
 		
 		$this->registerMetricDefinition(array(
 			'name'			=> 'pageViews',
-			'label'			=> 'Page Views',
+			'label'			=> '页面浏览次数',
 			'description'	=> 'The total number of pages viewed.',
 			'group'			=> 'Site Usage',
 			'entity'		=> 'base.session',
@@ -369,7 +369,7 @@ class owa_baseModule extends owa_module {
 		
 			$this->registerMetricDefinition(array(
 				'name'			=> 'uniqueVisitors',
-				'label'			=> 'Unique Visitors',
+				'label'			=> '唯一访问者人数',
 				'description'	=> 'The total number of unique visitors.',
 				'group'			=> 'Site Usage',
 				'entity'		=> $factEntity,
@@ -387,7 +387,7 @@ class owa_baseModule extends owa_module {
 			if ($factEntity === 'base.session') {
 				$this->registerMetricDefinition(array(
 					'name'			=> 'visits',
-					'label'			=> 'Visits',
+					'label'			=> '访问量',
 					'description'	=> 'The total number of visits/sessions.',
 					'group'			=> 'Site Usage',
 					'entity'		=> 'base.session',
@@ -401,7 +401,7 @@ class owa_baseModule extends owa_module {
 			
 				$this->registerMetricDefinition(array(
 					'name'			=> 'visits',
-					'label'			=> 'Visits',
+					'label'			=> '访问量',
 					'description'	=> 'The total number of visits/sessions.',
 					'group'			=> 'Site Usage',
 					'entity'		=> $factEntity,

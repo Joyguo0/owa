@@ -33,7 +33,7 @@ class owa_uniquePageViews extends owa_metric {
 	function __construct() {
 	
 		$this->setName('uniquePageViews');
-		$this->setLabel('Unique Page Views');
+		$this->setLabel('单页浏览');
 		$this->setEntity('base.request');
 		$this->setColumn('document_id');
 		$this->setSelect(sprintf("count(distinct %s)", $this->getColumn()));

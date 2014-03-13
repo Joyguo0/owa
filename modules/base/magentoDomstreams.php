@@ -31,7 +31,7 @@ require_once(OWA_BASE_DIR.'/owa_view.php');
  * @since		owa 1.2.1
  */
 
-class owa_reportDomstreamsController extends owa_reportController {
+class owa_magentoDomstreamsController extends owa_reportController {
 
 	function action() {
 		$document_id = '';
@@ -74,10 +74,10 @@ class owa_reportDomstreamsController extends owa_reportController {
 		));
 		
 		$this->set('domstreams', $ds);
+		
 		//print_r($ds);
 		
-		// set view stuff
-		$this->setSubview('base.reportDomstreams');
+		$this->setSubview('base.magentoDomstreams');
 		
 							
 	}
@@ -96,12 +96,12 @@ class owa_reportDomstreamsController extends owa_reportController {
  * @since		owa 1.2.1
  */
 
-class owa_reportDomstreamsView extends owa_view {
+class owa_magentoDomstreamsView extends owa_view {
 
 	function render() {
 		
 		$this->body->set('domstreams', $this->get('domstreams'));
-		$this->body->set_template('report_domstreams.tpl');
+		$this->body->set_template('magento_domstreams.tpl');
 		$doc = $this->get('document');
 		$this->body->set('document', $doc);
 		$this->body->set('properties', $this->get('item_properties'));
