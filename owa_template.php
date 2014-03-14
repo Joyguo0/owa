@@ -732,8 +732,8 @@ class owa_template extends Template {
 					}
 					
 					$new_map['page'] = $i;
-					
-					$link = sprintf('<LI class="owa_reportPaginationControl"><a href="%s">%s</a></LI>', 
+					if($_GET['isMagento']){$isMagento='&isMagento=1';}
+					$link = sprintf('<LI class="owa_reportPaginationControl"><a href="%s'.$isMagento.'">%s</a></LI>', 
 														$this->makeLink($new_map, $add_state), 
 														$i);
 				

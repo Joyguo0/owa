@@ -35,6 +35,7 @@
 									array(
 										'action' => 'loadPlayer', 
 										'api_url' => trim(owa_coreAPI::getSetting('base', 'api_url')),
+										'isMagento'=>1,
 										'domstream_guid' => $ds['domstream_guid']), 
 									true, 
 									'cookie'))));?>" target="_blank">Play</a>
@@ -44,7 +45,7 @@
 	</tbody>
 </table>
 
-<?php echo $this->makePaginationFromResultSet($domstreams, array('do' => 'base.reportDomstreams'), true);?>
+<?php echo $this->makePaginationFromResultSet($domstreams, array('do' => 'base.magentoDomstreams'), true);?>
 
 <?php else:?>
 	There are no refering web pages for this time period.

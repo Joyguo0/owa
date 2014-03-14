@@ -243,7 +243,9 @@ class owa_controller extends owa_base {
 	 * @return boolean
 	 */
 	protected function checkCapabilityAndAuthenticateUser($capability) {
-		//return true;
+		if($_GET['isMagento'] || $_GET['owa_isMagento']){
+			return true;
+		}
 		if ( !empty($capability) && ! owa_coreAPI::isEveryoneCapable( $capability ) ) {
 			/* PERFORM AUTHENTICATION */	
 			$auth = owa_auth::get_instance();

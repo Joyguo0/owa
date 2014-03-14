@@ -69,7 +69,7 @@ class owa_magentoDomstreamsController extends owa_reportController {
 			'document_id'		=> $document_id,
 			'siteId'			=> $this->getParam('siteId'),
 			'page'				=> $this->getParam('page'),
-			'resultsPerPage'	=> 50,
+			'resultsPerPage'	=> 15,
 			'format'			=> $this->getParam('format')
 		));
 		
@@ -78,7 +78,6 @@ class owa_magentoDomstreamsController extends owa_reportController {
 		//print_r($ds);
 		
 		$this->setSubview('base.magentoDomstreams');
-		
 							
 	}
 	
