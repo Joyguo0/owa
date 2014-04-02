@@ -58,7 +58,7 @@ class owa_magentoDomstreamsController extends owa_reportController {
 			$this->set('item_properties', $doc);
 		} else {
 			// latest domstream report
-			$this->setTitle('Latest Domstreams');
+			$this->setTitle('最新页面跟踪');
 		}
 		
 		$ds = owa_coreAPI::executeApiCommand(array(

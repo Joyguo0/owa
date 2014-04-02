@@ -1894,7 +1894,7 @@ class owa_baseModule extends owa_module {
 		$this->addNavigationLinkInSubGroup( 'Content', 'base.reportFeeds','供稿 ', 7);
 		$this->addNavigationLinkInSubGroup( 'Content', 'base.reportEntryPages','进入页面 ', 3);
 		$this->addNavigationLinkInSubGroup( 'Content', 'base.reportExitPages','退出页面 ', 4);
-		$this->addNavigationLinkInSubGroup( 'Content', 'base.reportDomstreams','Domstreams ', 5);
+		$this->addNavigationLinkInSubGroup( 'Content', 'base.reportDomstreams','页面追踪 ', 5);
 		//Actions,,'',
 		$this->addNavigationSubGroup('Action Tracking', 'base.reportActionTracking','跟踪行动 ', 1);
 		$this->addNavigationLinkInSubGroup('Action Tracking', 'base.reportActionGroups','行动小组 ', 2);
@@ -2616,7 +2616,7 @@ class owa_baseModule extends owa_module {
 		
 		$results = $rs->generate($db);
 
-		$rs->setLabels(array('id' => 'Domstream ID', 'page_url' => 'Page Url', 'duration' => 'Duration', 'timestamp' => 'Timestamp'));
+		$rs->setLabels(array('id' => '页面追踪', 'page_url' => '页面路径', 'duration' => '周期', 'timestamp' => '时间'));
 		
 		if ($format) {
 			owa_lib::setContentTypeHeader($format);
