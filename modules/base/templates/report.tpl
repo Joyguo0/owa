@@ -51,7 +51,9 @@ jQuery(document).ready(function(){
 	</table>	
 </div>
 <script>
+<?php if(!$_GET['isMagento']){?>
 OWA.items['<?php echo $dom_id;?>'].displayTimePeriodPicker('#owa_timePeriodControl');
+<?php }?>
 OWA.items['<?php echo $dom_id;?>'].showSiteFilter();
 OWA.items['<?php echo $dom_id;?>'].showAutoRefreshControl({label: '实时查看:', target: '#liveViewSwitch'});
 </script>
